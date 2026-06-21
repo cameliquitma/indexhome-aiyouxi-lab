@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱游戏 · 站点介绍</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background: #f0f2f4;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+      color: #2d3436;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+    }
+    .page-wrap {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    /* 卡片基调 */
+    .card {
+      background: #ffffff;
+      border: 1px solid #e3e7ea;
+      border-radius: 18px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04), 0 1px 3px rgba(0,0,0,0.02);
+      padding: 2rem 2.2rem;
+      margin-bottom: 2rem;
+      transition: box-shadow 0.2s;
+    }
+    .card:hover {
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    /* hero 区 */
+    .hero {
+      text-align: center;
+      padding: 2.5rem 1.5rem 2rem;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #1f2a36;
+      margin-bottom: 0.6rem;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      color: #5b6772;
+      max-width: 520px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+    .hero .deco {
+      display: inline-block;
+      margin: 0.8rem auto 0.2rem;
+      width: 46px;
+      height: 3px;
+      background: #b3c0cc;
+      border-radius: 4px;
+    }
+    /* 段落标题 */
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 0.9rem;
+      color: #25303e;
+      border-left: 4px solid #7f8fa6;
+      padding-left: 0.9rem;
+    }
+    .section-text {
+      font-size: 1rem;
+      color: #3d4a56;
+      margin-bottom: 1.1rem;
+    }
+    .section-text:last-child {
+      margin-bottom: 0;
+    }
+    /* 引用块 */
+    .insight {
+      background: #f5f7f9;
+      border-left: 4px solid #8fa5b8;
+      border-radius: 8px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.4rem 0 1.6rem;
+      font-style: normal;
+      color: #3d4b57;
+      font-size: 0.98rem;
+    }
+    .insight::before {
+      content: "💡 ";
+      font-style: normal;
+      font-size: 1.1rem;
+    }
+    /* 场景小网格 */
+    .scene-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1.2rem 0 0.5rem;
+    }
+    .scene-item {
+      background: #f7f9fb;
+      border: 1px solid #e6eaee;
+      border-radius: 30px;
+      padding: 0.4rem 1.1rem;
+      font-size: 0.9rem;
+      color: #2d3b47;
+      white-space: nowrap;
+    }
+    /* faq 摘要 */
+    .faq-item {
+      margin-bottom: 0.9rem;
+    }
+    .faq-item strong {
+      display: block;
+      font-weight: 600;
+      color: #1e2b38;
+      margin-bottom: 0.15rem;
+    }
+    .faq-item p {
+      color: #43525e;
+      font-size: 0.96rem;
+    }
+    /* 链接嵌入句子 */
+    .inline-link {
+      color: #2a6b9c;
+      text-decoration: none;
+      border-bottom: 1px solid #b7cbde;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .inline-link:hover {
+      color: #1b4f78;
+      border-bottom-color: #2a6b9c;
+    }
+    /* 脚注 */
+    .footer-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #7b8896;
+      margin-top: 2.6rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #dce2e8;
+    }
+    /* 响应式 */
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem 0.8rem;
+      }
+      .card {
+        padding: 1.5rem 1.2rem;
+        border-radius: 14px;
+      }
+      .hero h1 {
+        font-size: 1.9rem;
+      }
+      .section-title {
+        font-size: 1.1rem;
+      }
+      .scene-item {
+        white-space: normal;
+        padding: 0.35rem 0.9rem;
+        font-size: 0.83rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page-wrap">
+
+  <!-- hero -->
+  <div class="card hero">
+    <h1>爱游戏</h1>
+    <div class="deco"></div>
+    <p class="sub">一个可以快速了解站点用途的简洁介绍页。<br>自然叙述，克制表达。</p>
+  </div>
+
+  <!-- 文章主体：识别站点用途 -->
+  <div class="card">
+    <h2 class="section-title">第一印象：这个站点是做什么的</h2>
+    <p class="section-text">
+      当你第一次打开一个不熟悉的网站，总希望能在几十秒内判断它是否对你有用。对于 <a href="https://indexhome-aiyouxi.com.cn" class="inline-link">爱游戏</a> 这个站点，最直接的理解路径往往藏在它的命名与页面气质里。它并不急于用大字号推销什么，而是留出一片干净的叙述空间，让你自己感受。
+    </p>
+    <p class="section-text">
+      从结构上看，这里更像一个带有个人视角的内容集成地。没有浮夸的跳转弹窗，也没有密密麻麻的分类菜单。你看到的是经过筛选的文字、克制的排版，以及一种“先告诉你我是谁”的从容。如果你曾为一些网站扑面而来的信息量感到疲惫，那么这里的节奏可能会让你稍作停留。
+    </p>
+    <div class="insight">
+      站点的内容方向围绕“游戏与日常体验”展开，但不止于评测或攻略，更多是记录、观察和一点延伸思考。
+    </div>
+    <p class="section-text">
+      那么，如何快速确认它是否匹配你的需求？不妨先留意标题和导语——它们往往概括了作者最想传递的核心。接着浏览一两段正文，看看语气是否合拍。如果文字让你产生“嗯，有点意思”的念头，那大概就找对了地方。
+    </p>
+  </div>
+
+  <!-- 特点与场景 混合卡片 -->
+  <div class="card">
+    <h2 class="section-title">内容特点与常见阅读场景</h2>
+    <p class="section-text">
+      这里的文章篇幅中等，不追求面面俱到，但会在某个角度上多说几句。比如某款游戏的氛围、某个设计细节带来的感受，或者游戏之外的小话题。作者似乎更在意“这件事为什么值得一说”，而不是单纯罗列参数。
+    </p>
+    <div class="scene-grid">
+      <span class="scene-item">🎮 独立游戏杂谈</span>
+      <span class="scene-item">📝 体验记录</span>
+      <span class="scene-item">🧩 设计观察</span>
+      <span class="scene-item">☕ 日常与游戏</span>
+    </div>
+    <p class="section-text" style="margin-top: 1.2rem;">
+      如果你习惯在午休或睡前翻几段轻松的文字，或者对游戏背后的人与想法有兴趣，这里的节奏应该能贴合你。没有时间压力，也没有必须读完的清单——每篇都可以随时开始，随时放下。
+    </p>
+  </div>
+
+  <!-- faq 摘要 + 提示 -->
+  <div class="card">
+    <h2 class="section-title">一些你可能想了解的</h2>
+    <div class="faq-item">
+      <strong>❓ 这个站会频繁更新吗？</strong>
+      <p>更新节奏不算密集，但每一篇都会打磨到作者自己觉得可以拿出手的程度。比起数量，更在意内容有没有说清楚。</p>
+    </div>
+    <div class="faq-item">
+      <strong>❓ 有没有特定主题范围？</strong>
+      <p>主要以游戏为起点，但经常延伸到界面交互、叙事方式，甚至游戏音乐。如果你也喜欢从游戏里跳出来想点别的，说不定会有共鸣。</p>
+    </div>
+    <div class="faq-item">
+      <strong>❓ 第一次来，建议从哪篇开始？</strong>
+      <p>首页上按时间排列的最近几篇通常比较有代表性。也可以根据你感兴趣的关键词直接浏览标题，挑一篇最顺眼的点进去。</p>
+    </div>
+    <div style="margin-top: 1rem; border-top: 1px solid #e9edf2; padding-top: 1.2rem;">
+      <p style="font-size: 0.95rem; color: #4a5a68;">💬 如果你愿意，可以把 <a href="https://indexhome-aiyouxi.com.cn" class="inline-link">爱游戏</a> 当作一个安静的数字角落。这里有文字，有游戏，有思考，没有噪音。</p>
+    </div>
+  </div>
+
+  <!-- 结束语 -->
+  <div class="card" style="text-align: center; padding: 1.2rem 1.5rem;">
+    <p style="color: #4b5b69; font-size: 1rem;">感谢你读到此处。<br>希望下一次再遇到这个站点时，你已经知道它大概的模样了。</p>
+  </div>
+
+  <div class="footer-note">
+    <span>内容仅代表个人视角 · 保持开放 · 保持克制</span>
+  </div>
+
+</div>
+</body>
+</html>
